@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos y enlaces a hojas de estilo y fuentes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Trocchi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Ingrese los nombres de tus amigos</h1>
+        <!-- Contenedor de entrada de nombres -->
+        <div class="input-container">
+            <input type="text" class="amigosSecretos" id="nombresAgregados" placeholder="Escriba un nombre">
+            <button onclick="cargarNombres()" class="boton-add">Añadir</button>
+        </div>
+        <!-- Contenedor de la lista de amigos -->
+        <div class="CajaDeAmigos">
+            <ul class="amigosAgregados" id="listaDeAmigos"></ul>
+        </div>
+        <!-- Botón para sortear amigo secreto -->
+        <div>
+            <button class="sortearAmigo">SORTEAR AMIGO</button>
+        </div>
+        <!-- Contenedor del resultado del sorteo -->
+        <div id="resultadoAmigoSecreto" class="resultado-oculto">
+            <h2>Tu amigo secreto es:</h2>
+            <p id="nombreAmigoSecreto"></p>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="main.js"></script> 
+</body>
+</html>
